@@ -156,3 +156,22 @@ h2,
 h3 {
   font-family: "Moelle", Times, serif;
 }
+
+a,
+a:visited {
+  color: black;
+}
+
+/* --HEADER -- */
+#skip {
+  position: absolute;
+  left: -20000px;
+  background-color: var(--yellow);
+  padding: 15px;
+  z-index: 200;
+  text-decoration: none;
+}
+
+#skip:focus {
+  left: 20px;
+}
