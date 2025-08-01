@@ -165,13 +165,29 @@ a:visited {
 /* --HEADER -- */
 #skip {
   position: absolute;
-  left: -20000px;
-  background-color: var(--yellow);
-  padding: 15px;
-  z-index: 200;
-  text-decoration: none;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 #skip:focus {
+  background-color: var(--yellow);
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  padding: 15px;
   left: 20px;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
