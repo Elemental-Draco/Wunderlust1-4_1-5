@@ -191,3 +191,100 @@ a:visited {
   padding: 0;
   position: absolute;
 }
+
+#menu-toggle ul {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  left: 100%;
+  padding-top: 50px;
+  background-color: var(--teal);
+  transition: 0.5s left ease;
+  z-index: 200;
+}
+
+#menu-toggle input:checked ~ ul {
+  left: 0;
+}
+
+label[for="toggle"] {
+  display: block;
+  position: absolute;
+  padding: 20px;
+  width: 5rem;
+  background-color: var(--yellow);
+  color: var(--black);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  top: -120px;
+  right: 50px;
+  cursor: pointer;
+}
+
+#menu-toggle ul::before {
+  content: "Menu";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 15px 0;
+}
+
+#toggle {
+  display: none;
+}
+
+nav ul li {
+  padding: 40px;
+  background-color: var(--teal);
+  border-top: var(--black) 1px solid;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu-toggle {
+  position: relative;
+}
+
+#menu-toggle::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 100;
+}
+
+#menu-toggle:has(input:checked)::after {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#menu-toggle input:checked + label[for="toggle"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: none;
+  color: transparent;
+  z-index: 150;
+  cursor: pointer;
+}
