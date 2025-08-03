@@ -415,4 +415,38 @@ header > p {
 
 #about {
   background-color: var(--blue);
+  padding: 20px 40px;
 }
+
+#about h3 {
+  width: 15ch;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+#about > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px 30px;
+  align-items: end;
+}
+
+#about > div img {
+  margin: 0 auto;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+#about > div > section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+
+}
+
+#about h4, #about p{
+  font-size: 1.2rem;
+}
+
+/* -- CONTACT -- */
