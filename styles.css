@@ -149,6 +149,7 @@ body {
   width: 100%;
   min-height: 100%;
   font-family: "Montserrat", Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -301,6 +302,7 @@ li a {
 
 header {
   background-image: linear-gradient(to bottom, var(--blue), var(--white));
+
 }
 
 
@@ -513,4 +515,22 @@ input[type="submit"] {
   color: var(--white);
   font-size: 1.5rem;
   padding: 15px 0;
+}
+
+/* -- FOOTER -- */
+
+footer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: var(--light-gray);
+}
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  margin-top: 20px;
 }
