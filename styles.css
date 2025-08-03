@@ -162,6 +162,10 @@ h2, h3 {
   font-size: 2.5rem;
 }
 
+h4 {
+  font-weight: bold;
+}
+
 a,
 a:visited {
   color: black;
@@ -364,4 +368,51 @@ header > p {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+/* -- TESTIMONIALS -- */
+
+#testimonials > div > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#testimonials q::before , #testimonials q::after {
+  content: "\"";
+}
+
+#testimonials q {
+  font-style: italic;
+  width: 22ch;
+  text-align: center;
+
+}
+
+#testimonials q, #testimonials p {
+  font-size: 1.25rem;
+}
+
+#testimonials h3 {
+  margin-bottom: 15px;
+}
+
+#testimonials h4 {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  /* text-transform: uppercase; */
+  width: 14ch;
+  text-align: center;
+  line-height: 1.2;
+}
+
+#testimonials {
+  padding: 40px 40px 10px;
+}
+
+/* -- ABOUT DESTINATION -- */
+
+#about {
+  background-color: var(--blue);
 }
