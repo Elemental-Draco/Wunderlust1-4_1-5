@@ -450,3 +450,67 @@ header > p {
 }
 
 /* -- CONTACT -- */
+
+#contact {
+  padding: 40px;
+}
+
+.form-required {
+  font-size: 1rem;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-style: italic;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label , fieldset legend{
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.required {
+  color: var(--purple);
+}
+
+form input, form select {
+  border: 2px solid var(--purple);
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: var(--white);
+}
+
+select {
+  width: 100%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.radio-input > input{
+  transform: scale(3.5);
+  accent-color: var(--purple);
+  border: var(--purple) 1px solid;
+}
+
+.radio-label {
+  margin-left: 25px;
+  font-weight: normal;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: var(--purple);
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 15px 0;
+}
