@@ -343,8 +343,7 @@ header>a img {
 
 /* -- INTRO -- */
 
-#intro p,
-#intro h2 {
+article>div * {
   padding: 10px 30px;
 }
 
@@ -630,6 +629,30 @@ footer a {
     border: none;
     background-color: var(--white);
     padding: 15px;
+  }
+
+
+  article>section,
+  article>div {
+    padding: 20px 60px !important;
+  }
+
+  article>div * {
+    padding: 0;
+  }
+
+  #img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  #img-grid img {
+    margin: 0;
+  }
+
+  #img-grid :last-child {
+    grid-column: span 2;
   }
 
 }
