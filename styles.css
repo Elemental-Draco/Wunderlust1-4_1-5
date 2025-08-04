@@ -665,4 +665,14 @@ footer a {
   #plan>div>section {
     margin: 0;
   }
+
+  #testimonials>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  #testimonials>div>section {
+    margin: 0;
+  }
 }
