@@ -213,7 +213,7 @@ p {
   position: absolute;
 }
 
-#menu-toggle ul {
+nav ul {
   position: absolute;
   top: -190px;
   width: 100%;
@@ -224,7 +224,7 @@ p {
   z-index: 200;
 }
 
-#menu-toggle input:checked~ul {
+nav input:checked~ul {
   left: 0;
 }
 
@@ -243,7 +243,7 @@ label[for="toggle"] {
   cursor: pointer;
 }
 
-#menu-toggle ul::before {
+nav ul::before {
   content: "Menu";
   display: block;
   position: absolute;
@@ -309,7 +309,7 @@ li a {
 }
 
 header {
-  background-image: linear-gradient(to bottom, var(--blue), var(--white));
+  background-image: linear-gradient(to bottom, var(--teal), var(--white));
 
 }
 
@@ -342,7 +342,6 @@ header>a img {
 }
 
 /* -- INTRO -- */
-
 
 #intro p,
 #intro h2 {
@@ -553,4 +552,84 @@ footer p {
 footer a {
   text-decoration: none;
   margin-top: 20px;
+}
+
+/* -- MEDIA QUERIES -- */
+
+@media screen and (min-width:768px) {
+
+  h1,
+  h2,
+  h3 {
+    text-indent: 0;
+  }
+
+  h1,
+  header>p {
+    margin: 0;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: start;
+    padding: 30px 20px 40px;
+
+  }
+
+
+  header>a img {
+    width: 100%;
+    margin: 0;
+
+  }
+
+  header>a {
+    grid-row: 1/3;
+    justify-self: left;
+    /* margin-right: 30px; */
+  }
+
+  header>p {
+    grid-column: 2;
+    padding-right: 4 0px;
+  }
+
+  label[for="toggle"] {
+    display: none;
+  }
+
+  #menu-toggle ul::before,
+  #menu-toggle ul::after {
+    display: none;
+  }
+
+  nav {
+    grid-column: 1/3;
+    grid-row: 3 /4;
+    padding-top: 10px;
+  }
+
+  #menu-toggle {
+    max-width: 100%;
+
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    position: static;
+    background: none;
+    gap: 15px;
+    padding: 0 20px;
+
+  }
+
+  nav ul li {
+    border: none;
+    background-color: var(--white);
+    padding: 15px;
+  }
+
 }
