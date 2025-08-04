@@ -655,4 +655,14 @@ footer a {
     grid-column: span 2;
   }
 
+
+  #plan>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  #plan>div>section {
+    margin: 0;
+  }
 }
