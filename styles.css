@@ -343,7 +343,7 @@ header>a img {
 
 /* -- INTRO -- */
 
-article>div * {
+article>div {
   padding: 10px 30px;
 }
 
@@ -456,13 +456,11 @@ article>div * {
 #about>div>section {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   height: 100%;
-
 }
 
-#about h4,
-#about p {
+#about h4 {
   font-size: 1.2rem;
 }
 
@@ -637,7 +635,7 @@ footer a {
     padding: 20px 60px !important;
   }
 
-  article>div * {
+  article>div {
     padding: 0;
   }
 
@@ -678,9 +676,14 @@ footer a {
 
   #about>div {
     grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
   }
 
   #about>h3 {
     width: auto;
+  }
+
+  #about p {
+    width: max-content;
   }
 }
