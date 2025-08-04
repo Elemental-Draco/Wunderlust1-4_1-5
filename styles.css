@@ -675,4 +675,12 @@ footer a {
   #testimonials>div>section {
     margin: 0;
   }
+
+  #about>div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #about>h3 {
+    width: auto;
+  }
 }
