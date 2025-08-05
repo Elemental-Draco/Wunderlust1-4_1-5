@@ -792,4 +792,16 @@ footer a {
   #testimonials>div>section q {
     width: 30ch;
   }
+
+  #about {
+    padding: 100px;
+  }
+
+  #about div {
+    max-width: 1200px;
+  }
+
+  #about div section h4 {
+    margin-top: 20px;
+  }
 }
