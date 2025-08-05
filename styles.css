@@ -618,8 +618,7 @@ footer a {
     position: static;
     background: none;
     gap: 15px;
-    padding: 0 20px;
-
+    padding: 0;
   }
 
   nav ul li {
@@ -752,7 +751,9 @@ footer a {
     padding: 0;
   }
 
-  nav ul {
-    padding: 0;
+  nav ul li {
+    padding: 15px 30px;
   }
+
+
 }
