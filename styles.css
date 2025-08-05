@@ -555,6 +555,8 @@ footer a {
 
 @media screen and (min-width:768px) {
 
+  /* -- HEADER -- */
+
   h1,
   h2,
   h3 {
@@ -642,6 +644,8 @@ footer a {
     padding: 0;
   }
 
+  /* -- INTRO -- */
+
   #img-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -656,6 +660,7 @@ footer a {
     grid-column: span 2;
   }
 
+  /* -- PLAN -- */
 
   #plan>div {
     display: grid;
@@ -667,6 +672,8 @@ footer a {
     margin: 0;
   }
 
+  /* -- TESTIMONIALS -- */
+
   #testimonials>div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -676,6 +683,8 @@ footer a {
   #testimonials>div>section {
     margin: 0;
   }
+
+  /* -- ABOUT -- */
 
   #about>div {
     grid-template-columns: repeat(4, 1fr);
@@ -689,6 +698,8 @@ footer a {
   #about p {
     width: max-content;
   }
+
+  /* -- CONTACT -- */
 
   #contact {
     padding-top: 40px;
@@ -714,6 +725,8 @@ footer a {
     margin-left: auto;
   }
 
+  /* -- FOOTER -- */
+
   footer {
     flex-direction: row;
     align-items: center;
@@ -729,13 +742,14 @@ footer a {
 /* -- LARGE MEDIA QUERY */
 
 @media screen and (min-width: 1920px) {
+
+  /* -- HEADER -- */
+
   header {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
     align-items: end;
   }
-
-
 
   header img {
     max-width: 358px;
@@ -755,6 +769,8 @@ footer a {
     padding: 15px 30px;
   }
 
+  /* -- INTRO -- */
+
   #intro {
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -773,6 +789,8 @@ footer a {
     grid-column: 2;
   }
 
+  /* -- PLAN -- */
+
   #plan {
     padding: 100px;
   }
@@ -780,6 +798,8 @@ footer a {
   #plan>div {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  /* -- TESTIMONIALS */
 
   #testimonials {
     padding: 100px;
@@ -793,6 +813,8 @@ footer a {
     width: 30ch;
   }
 
+  /* -- ABOUT -- */
+
   #about {
     padding: 100px;
   }
@@ -805,6 +827,7 @@ footer a {
     margin-top: 20px;
   }
 
+  /* -- CONTACT -- */
   #contact {
     padding: 100px;
   }
@@ -823,4 +846,19 @@ footer a {
     margin-top: 38px;
     padding: 10px;
   }
+
+  /* -- FOOTER -- */
+  footer {
+    justify-content: space-between;
+    padding: 30px 100px;
+  }
+
+  footer a:first-of-type {
+    margin-left: auto;
+  }
+
+  footer a+a {
+    margin-left: 100px;
+  }
+
 }
