@@ -772,4 +772,24 @@ footer a {
     grid-row: 1 / span 2;
     grid-column: 2;
   }
+
+  #plan {
+    padding: 100px;
+  }
+
+  #plan>div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #testimonials {
+    padding: 100px;
+  }
+
+  #testimonials>div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #testimonials>div>section q {
+    width: 30ch;
+  }
 }
